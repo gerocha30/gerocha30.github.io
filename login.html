@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="css/burguer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="stylesheet">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AMzMzADtiyEA8seZACYWBQCCgoIAqKelAEdHRgBpaGgAIRIDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKqqqgAAAACqVVVVqgAAClVVVVVVoAClVRETM1VaAKVRERMzNVoKVREREzMzVapVERETMzNVqIgRERMzM1WpmTMzMRERVaZmQzMxERFVp3dEMzEREVWgIiRDMREVVQAiIkQxEVVaAAIidphVVaAAACJ2mFWqAAAAAHaYqgAAD4HwAA4AcAAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACAAQAAwAMAAOAHAAD4HwAA" rel="icon" type="image/x-icon" />
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <img class="logoBmw" src="./img/Icon_Logo.svg">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+                <a href="#home"class="nav-btn"><li >Home</li></a>
+                <a href="#carros"class="nav-btn"><li >Carros</li></a>
+                <a href="#footer"class="nav-btn"><li >Sobre nós</li></a>
+                <a href="#modal" class="nav-btn"><li >Login</li></a>
+            </ul>
+            </div>
+        </nav>
+        <nav class="nav-desktop">
+            <ul>
+                <a href="#home"><li>Home</li></a> 
+                <a href="#carros"><li>Carros</li></a>
+                <a href="#footer"><li>Sobre Nós</li></a>
+                <a href="index_login.html"><li>Login</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="banner">
+        <div class="painelBanner">
+            <div class="conteudoBanner">
+                <h1> BMW</h1>
+                <p> Confira o Showroom de carros da BMW</p>
+                <a href="#carros"> <button class="btnBanner"> Explorar</button></a>
+        </div>
+    </section>
+    <div id="modal">
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+           <img src="/img/Icon_Logo.svg" alt="Logo BMW" class="logo">
+         </div>
+         <div class="container">
+           <label for="email"><b>E-mail</b></label>
+           <input type="text" placeholder="Digite seu e-mail" name="email" id="email" required>
+           <label for="senha"><b>Senha</b></label>
+           <input type="password" placeholder="Digite sua senha" name="password" id="password" required>
+           <button type="submit">Entrar</button>
+         </div>
+    </div>
+    </form>
+</body>
+</html>
